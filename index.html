@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H-Fitness</title>
+    <script src="https://kit.fontawesome.com/d7c6a24acb.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+
+        body {
+            box-sizing: border-box;
+            height: 100vh;
+            width: 100%;
+            font-family: 'Nunito Sans', sans-serif;
+        }
+        .head {
+            background-image: url("pexels-anush-gorak-1229356.jpg");
+            background-position: center;
+            background-size: cover;
+            height: 650px;
+            clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 50% 100%, 0 91%);
+
+        }
+
+        .left {
+            position: absolute;
+            top: 15px;
+            left: 20px;
+            padding-right: 20px;
+            margin-right: 10px;
+            font-size: 25px;
+            color: rgb(172 159 159);
+        }
+
+        .left i {
+            padding: 10px;
+            font-size: 40px;
+            width: 60px;
+        }
+
+        .mid {
+
+            display: block;
+            width: 33%;
+            margin: 20px auto;
+        }
+
+        .right {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        .mid li {
+            display: inline-block;
+            text-decoration: none;
+            padding: 15px;
+        }
+
+        .mid li a {
+            color: rgb(219 148 148);
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        .mid li a:hover {
+            color: grey;
+            background: white;
+            color: black;
+            cursor: pointer;
+            font-weight: bold;
+            height: 10px;
+        }
+
+        .heading {
+            text-align: center;
+            font-size: 60px;
+            color: #f5c4a1;
+            padding-top: 330px;
+        }
+
+        p {
+            text-align: center;
+            font-size: 25px;
+            color: #c99570;
+            padding: 10px;
+
+        }
+
+        .btn {
+            color: white;
+            background-color: rgb(141, 3, 49);
+            padding: 10px;
+            margin-top: 10px;
+            margin-right: 30px;
+            width: 100px;
+            border: black;
+            border-radius: 15px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            color: black;
+            cursor: pointer;
+            background-color: antiquewhite;
+        }
+
+        .btn1 {
+            color: white;
+            background-color: rgb(141, 3, 49);
+            padding: 10px;
+            width: 150px;
+            margin-left: 48%;
+            border: black;
+            border-radius: 15px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .btn1:hover {
+            color: black;
+            background-color: antiquewhite;
+            cursor: pointer;
+        }
+
+        .img1 {
+            height: 300px;
+            width: 200px;
+            padding-left: 50px;
+            padding-top: 10px;
+        }
+
+        .about {
+            height: 350px;
+            width: 460px;
+            margin: auto;
+            padding-right: 200px;
+
+        }
+
+        .aimg {
+            height: 370px;
+            padding-top: 10px;
+            padding-left: 50px;
+            width: 180%;
+        }
+
+        .apara {
+            width: 160%;
+            color: #ead68e;
+        }
+
+        .list {
+            text-align: center;
+            padding: 10px;
+            background: #c26060;
+        }
+
+        .lcontainer {
+            display: flex;
+            padding: 20px;
+            background-color: #c26060;
+        }
+
+        .plan {
+            width: 33.3%;
+            padding: 10px;
+            background-color: #cea79a;
+            border: 2px solid powderblue;
+            font-size: 18px;
+        }
+
+        .price {
+            list-style-type: none;
+            border: 1px solid #black;
+            margin: 0;
+            padding: 0;
+            -webkit-transition: 0.3s;
+            transition: 0.3s;
+        }
+
+        .price:hover {
+            box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2)
+        }
+
+        .price .header {
+            background-color: #111;
+            color: white;
+            font-size: 25px;
+        }
+
+        .price li {
+            border-bottom: 1px solid #eee;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .pro {
+            background-color: #eee;
+            font-size: 20px;
+        }
+
+        .reg {
+            
+            height: 500px;
+            width: 100%;
+            background: url("pexels-leon-ardho-1552242.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .register {
+            text-align: center;
+            color: #b76800;
+            padding-top: 50px;
+            font-size: 53px;
+        }
+
+        .form-group {
+            text-align: center;
+        }
+
+        .form-group input {
+            text-align: center;
+            border: 2px solid white;
+            color: #eee;
+            font-weight: bold;
+            font-size: 18px;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 25px;
+            background: border-box;
+        }
+
+        .btn2 {
+            text-align: center;
+            margin-top: 10px;
+            margin-left: 46%;
+            display: block;
+            font-size: 15px;
+            font-weight: bold;
+            height: 31px;
+            width: 120px;
+            border: 2px solid black;
+            border-radius: 15px;
+            background: #c7bc92;
+        }
+        .btn2:hover{
+            background-color: black;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header class="head">
+        <div class="left">
+            <i class="fa-solid fa-dumbbell"></i>H-Fitness
+
+        </div>
+        <div class="mid">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="right">
+            <button class="btn"> Join Now </button>
+        </div>
+        <div class="main">
+            <h1 class="heading">
+                No Pain No Gain
+            </h1>
+            <p>Keep going. Never give up on a dream just because of the time it will take to accomplish it. The time
+                will
+                pass anyway. ...
+            </p>
+            <button class="btn1"> Get Started </button>
+        </div>
+    </header>
+
+    <div class="container" style="display: flex; background-color: #330c0c; height: 395px;">
+        <div class="img1">
+            <img class="aimg" src="pexels-sabel-blanco-1638324.jpg" alt="">
+        </div>
+        <div class="about">
+            <h2 style="margin-left: 58%; padding-top: 18px; color: #ed8820;"> A Word About Us</h2>
+            <p class="apara">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur quam ducimus deserunt nobis dolore
+                facilis. Deserunt itaque dolorem blanditiis ducimus delectus sapiente officiis tempora qui, quae vel?
+                Quam aliquam corporis.
+            </p>
+            <p class="apara">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit accusamus adipisci est velit
+                totam reiciendis nesciunt libero nisi.
+            </p>
+        </div>
+    </div>
+    <!-- <br> -->
+    <h1 class="list">Our Plans</h1>
+    <div class="lcontainer">
+        <div class="plan">
+            <ul class="price">
+                <li class="header">Basic</li>
+                <li> $ 20 / Mo</li>
+                <li><i class="fa-solid fa-check"></i> Weight Lifting</li>
+                <li><i class="fa-solid fa-check"></i> Cardio</li>
+                <li><i class="fa-solid fa-check"></i> Yoga</li>
+                <li><i class="fa-solid fa-check"></i> Training</li>
+                <li><i class="fa-solid fa-check"></i> Protein Powder</li>
+            </ul>
+        </div>
+
+        <div class="plan">
+            <ul class="price">
+                <li class="pro">Pro</li>
+                <li> $ 35 / Mo</li>
+                <li><i class="fa-solid fa-check"></i> Weight Lifting</li>
+                <li><i class="fa-solid fa-check"></i> Cardio</li>
+                <li><i class="fa-solid fa-check"></i> Yoga</li>
+                <li><i class="fa-solid fa-check"></i> Training</li>
+                <li><i class="fa-solid fa-check"></i> Protein Powder</li>
+            </ul>
+        </div>
+
+        <div class="plan">
+            <ul class="price">
+                <li class="header">Premium</li>
+                <li> $ 50 / Mo</li>
+                <li><i class="fa-solid fa-check"></i> Weight Lifting</li>
+                <li><i class="fa-solid fa-check"></i> Cardio</li>
+                <li><i class="fa-solid fa-check"></i> Yoga</li>
+                <li><i class="fa-solid fa-check"></i> Training</li>
+                <li><i class="fa-solid fa-check"></i> Protein Powder</li>
+            </ul>
+        </div>
+    </div>
+    <div class="reg">
+        <h1 class="register">Register Now</h1>
+        <form>
+            <div class="form-group">
+                <input type="text" placeholder="Enter First Name">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter Last Name">
+            </div>
+            <div class="form-group">
+                <input type="email" placeholder="Email Id">
+            </div>
+            <div class="form-group">
+                <input type="number" placeholder="Contact No">
+            </div>
+            <button class="btn2"> Submit </button>
+        </form>
+    </div>
+
+</body>
+
+</html>
